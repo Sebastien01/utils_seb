@@ -41,7 +41,7 @@ Functionnal test with a script:
 cd
 mkdir tmp
 cd tmp
-utils_seb-run
+show_utils
 ```
 
 # Install
@@ -70,5 +70,5 @@ Functionnal test with a script:
 cd
 mkdir tmp
 cd tmp
-utils_seb-run
+show_utils
 ```

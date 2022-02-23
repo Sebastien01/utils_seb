@@ -13,5 +13,5 @@ setup(name='utils_seb',
       test_suite='tests',
       # include_package_data: to install data from MANIFEST.in
       include_package_data=True,
-      scripts=['scripts/utils_seb-run'],
+      scripts=['scripts/show_utils'],
       zip_safe=False)
