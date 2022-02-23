@@ -5,3 +5,6 @@ def test_hello_lenght():
     
 def test_hello_content():
     assert "from" in hello()
+    
+def test_to_stop():
+    assert True == False
