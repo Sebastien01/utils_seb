@@ -1,3 +1,6 @@
 termcolor
 coverage
 pytest
+scikit-learn
+numpy
+pandas
