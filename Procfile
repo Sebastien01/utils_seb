@@ -1,1 +1,0 @@
-web: pip install . -U && show_utils
