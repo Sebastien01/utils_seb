@@ -107,3 +107,19 @@ def lagplot(x, y=None, shift=1, standardize=False, ax=None, **kwargs):
     title = f"Lag {shift}" if shift > 0 else f"Lead {shift}"
     ax.set(title=f"Lag {shift}", xlabel=x_.name, ylabel=y_.name)
     return ax
+
+
+def make_lags(ts, lags, lead_time=1):
+    return pd.concat(
+        {
+            f'y_lag_{i}': ts.shift(i)
+            for i in range(lead_time, lags + lead_time)
+        },
+        axis=1)
+    
+    
+def make_multistep_target(ts, steps):
+    return pd.concat(
+        {f'y_step_{i + 1}': ts.shift(-i)
+         for i in range(steps)},
+        axis=1)
