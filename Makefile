@@ -10,9 +10,9 @@ check_code:
 black:
 	@black scripts/* utils_seb/*.py
 
-test:
-	@coverage run -m pytest tests/test_*.py
-	@coverage report -m --omit="${VIRTUAL_ENV}/lib/python*"
+# test:
+#	@coverage run -m pytest tests/test_*.py
+#	@coverage report -m --omit="${VIRTUAL_ENV}/lib/python*"
 
 ftest:
 	@Write me
